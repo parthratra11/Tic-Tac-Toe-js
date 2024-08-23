@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="testProject-v2.css" />
+    <!-- <script
+      src="https://kit.fontawesome.com/3bfd3ce9e5.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://kit.fontawesome.com/64e451bf70.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <main>
+      <!-- Tic-Tac-Toe Title -->
+      <div class="layout" data-id="square-grid">
+        <div class="mainTitle">Tic-Tac-Toe</div>
+        <div class="mainGrid">
+          <!-- turnBoard -->
+          <div data-id="turn" class="turn">
+            <!-- <i class="fa-solid fa-x fa-2x"></i> -->
+            <i data-id="turn-icon" class="fa-solid fa-o fa-2x white"></i>
+            <p data-id="turn-text">Player 1, you're up !</p>
+          </div>
+
+          <!-- actionMenu -->
+          <div class="actions shadow">
+            <button class="actionButton" data-id="action-menu">
+              Actions
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <!-- actionMenu Options -->
+            <div
+              class="hiddenActionButtons shadow hidden"
+              data-id="hidden-action-menu"
+            >
+              <button data-id="reset-btn">Reset</button>
+              <button data-id="new-round-btn">New Round</button>
+            </div>
+          </div>
+
+          <!-- gameBoard -->
+          <div id="1" class="square shadow" data-id="square"></div>
+          <div id="2" class="square shadow" data-id="square"></div>
+          <div id="3" class="square shadow" data-id="square"></div>
+          <div id="4" class="square shadow" data-id="square"></div>
+          <div id="5" class="square shadow" data-id="square"></div>
+          <div id="6" class="square shadow" data-id="square"></div>
+          <div id="7" class="square shadow" data-id="square"></div>
+          <div id="8" class="square shadow" data-id="square"></div>
+          <div id="9" class="square shadow" data-id="square"></div>
+
+          <!-- scoreBoard -->
+          <div class="score shadow">
+            <p>Player 1</p>
+            <span data-id="p1-wins">0 Wins</span>
+          </div>
+          <div class="score shadow">
+            <p>Ties</p>
+            <span data-id="ties">0</span>
+          </div>
+          <div class="score shadow">
+            <p>Player 2</p>
+            <span data-id="p2-wins">0 Wins</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <p class="footer">Created by Parth</p>
+    </footer>
+
+    <!-- resultBox -->
+    <div class="resultBG hidden" data-id="result-box">
+      <div class="resultBox shadow">
+        <p data-id="result-text">Player Wins!</p>
+        <button data-id="play-again-btn">Play Again !</button>
+      </div>
+    </div>
+
+    <script src="testProject-v2.js" type="module"></script>
+  </body>
+</html>
